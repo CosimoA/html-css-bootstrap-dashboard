@@ -4,18 +4,23 @@
 
 /* DEBUG */
 
-/* *{
+*{
     border: 1px solid yellow;
-} */
+}
 
-/* .min-h100{
-    min-height: 100px;
-} */
+.min-h70{
+    min-height: 70px;
+    background-color: rgb(255, 255, 162);
+}
 
-/* .min-h300{
+.min-h150{
+    min-height: 150px;
+}
+
+.min-h300{
     min-height: 300px;
     background-color: pink;
-} */
+}
 
 /* .min-h500{
     min-height: 500px;
@@ -43,12 +48,12 @@ a{
 
 /*----------BACKGROUND COLORS----------*/
 
-.bg-grey{
-    background-color: #2c3e50;
+.bg-dark-blue{
+    background-color: #051e34;
 }
 
-.bg-verdeacqua {
-    background-color: #1abc9c;
+.bg-light-blu {
+    background-color: #1b72e8;
 }
 
 .bg-white{
@@ -92,6 +97,10 @@ a{
 
 /*----------LAYOUT----------*/
 
+.p-xy_col{
+    padding: 12px;
+}
+
 
 /*----------IMPUT----------*/
 
@@ -100,9 +109,32 @@ a{
     SITE SECTIONS
 ************************************************/
 
+/* HEADER */
+
+/* MAIN */
+
+#general_container{
+    height: calc(100vh - 70px);
+}
+
+/* aside */
+
+aside{
+    width: 150px;
+    background-image: url("../img/sidebar-bg.png");
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+/* main */
+
+#container_components{
+    width: calc(100% - 150px);
+    overflow-y: auto;
+}
+
 .card{
     height: 100%;
     width: 100%;
-    background-color: rgb(16, 129, 114);
 }
 
