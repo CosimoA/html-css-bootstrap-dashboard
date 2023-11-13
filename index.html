@@ -81,16 +81,44 @@
 
                 <div id="container_components" class="container-fluid flex-grow-1 bg-whitesmoke min-h300">
                     <!-- BLUE BAR -->
-                    <div class="row bg-light-blu">
+                    <div id="top-bar" class="row align-items-center bg-light-blu txt-white">
 
-                        <div class="col-12 col-lg-6 col-md-4 min-h150">
-
+                        <div class="col-12 col-lg-6 col-md-4 my-2 min-h150">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb align-items-end">
+                                    <li class="p-0"><h2>Boolean</h2></li>
+                                    <li class="breadcrumb-item label" aria-current="page">Piano blaze</li>
+                                </ol>
+                                <ol class="breadcrumb align-items-end">
+                                    <li class="label">3 app</li>
+                                    <li class="py-1 px-0"><i class="fa-solid fa-angles-right"></i></li>
+                                    <li class="label square-label text-center">+</li>
+                                    <li class="label label-hide"> Boolean mobile app</li>
+                                    <li class="label label-hide"> Boolean web app</li>
+                                    <li class="label label-hide"> Boolean blog app</li>
+                                </ol>
+                            </nav>
                         </div>
-                        <div class="col-12 col-lg-4 col-md-4 min-h150">
 
+                        <div class="col-12 col-lg-4 col-md-4 my-2 min-h150">
+                            <span class="py-1">Studenti online negli ultimi 30 minuti</span>
+                            <h2 class="py-1 ps-2">125</h2>
                         </div>
-                        <div class="col-12 col-lg-2 col-md-4 min-h150">
+                        <!-- OFFCANVAS -->
+                        <div class="d-flex col-12 col-lg-2 col-md-4 my-2 min-h150">
+                            <span>Nuovo studente</span>
+                            <button class="btn btn-primary border-white mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
 
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+
+                                <div class="offcanvas-body">
+                                    ...
+                                </div>
+                            </div>
                         </div>
 
                     </div>

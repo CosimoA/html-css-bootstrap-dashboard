@@ -13,9 +13,9 @@
     background-color: rgb(255, 255, 162);
 } */
 
-.min-h150{
+/* .min-h150{
     min-height: 100px;
-}
+} */
 
 /* .min-h300{
     min-height: 300px;
@@ -34,9 +34,20 @@
     GENERAL STYLES
 *************************************************/
 
+h2{
+    margin: 0;
+}
+
 span{
     padding: 0 0.5rem;
     font-size: 1.1rem;
+}
+
+.border-white{
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
 }
 
 /* ICONS */
@@ -117,12 +128,22 @@ a{
     color: black;
 }
 
-.txt-white, {
+.txt-white{
     color: white;
 }
 
 
-/*----------BUTTONS----------*/
+/*----------BREAD-CRUMB----------*/
+
+.label{
+    border-radius: 16px;
+    background-color: #165bba;
+}
+
+.square-label{
+    width: 32px;
+    height: 32px;
+}
 
 
 /************************************************
@@ -205,6 +226,23 @@ aside span{
     overflow-y: auto;
 }
 
+/* TOP BAR */
+
+#top-bar li{
+    padding: 0.25rem 0.5rem;
+    margin: 0.15rem 0.25rem;
+}
+
+#top-bar i{
+    font-size: 1rem;
+}
+
+.label-hide{
+    display: none;
+}
+
+/* COMPONENTS */
+
 .card{
     height: 100%;
     width: 100%;
@@ -253,6 +291,14 @@ tr{
 
     .nav-icon i{
         display: inline-block;
+    }
+
+    .label-hide{
+        display: list-item;
+    }
+
+    .square-label{
+        display: none;
     }
 }
 
