@@ -35,7 +35,10 @@
                         </div>
                     </div>
                     <div class="col-auto">
-
+                        <i class="fa-solid fa-list-ul nav-icon"></i>
+                        <i class="fa-solid fa-circle-question nav-icon"></i>
+                        <i class="fa-solid fa-ellipsis-vertical nav-icon"></i>
+                        <i id="bell" class="fa-solid fa-bell nav-icon"></i>
                     </div>
                 </div>
             </nav>
@@ -44,10 +47,40 @@
         <!-- MAIN w Aside fixed menù + container-fluid for all the components -->
         <main>
             <div id="general_container" class="container-fluid p-0 d-flex ">
-                <aside class="bg-dark-blue">
+                <!-- ASIDE MENU BAR -->
+                <aside class="bg-dark-blue py-4 px-3">
+                    <nav class="d-flex flex-column">
+
+                        <div class="menu-buttons flex-grow-1 ">
+
+                            <div class="d-flex align-items-center justify-content-center my-3">
+                                <i class="fa-solid fa-house"></i>
+                                <span><strong>Home</strong></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center my-3">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span><strong>Stats</strong></span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center my-3">
+                                <i class="fa-solid fa-signal"></i>
+                                <span><strong>Signals</strong></span>
+                            </div>
+                            
+                        </div>
+
+                        <div class="setting-button">
+                            <div class="d-flex align-items-center justify-content-center my-3">
+                                <i class="fa-solid fa-gear"></i>
+                                <span><strong>Admin</strong></span>
+                            </div>
+                        </div>
+
+                    </nav>
 
                 </aside>
-                <div id="container_components" class="container-fluid flex-grow-1 min-h300">
+
+                <div id="container_components" class="container-fluid flex-grow-1 bg-whitesmoke min-h300">
+                    <!-- BLUE BAR -->
                     <div class="row bg-light-blu">
 
                         <div class="col-12 col-lg-6 col-md-4 min-h150">
@@ -61,23 +94,236 @@
                         </div>
 
                     </div>
+
+                    <!-- 4 COMPONENTI -->
                     <div class="row">
-                        <div class="col-7 ">
-                            <div class="col-12 my-2 min-h300">
 
-                            </div>
-                            <div class="col-12 my-2 min-h300">
+                        <!-- COMPONENTE 1 - 2 -->
+                        <div class="col-12 col-lg-7 ">
 
+                            <!-- NEXT CLASSROMS -->
+                            <div class="col-12 my-3 min-h300">
+                                <div class="card">
+                                    <h2 class="card-header">Prossime Classi</h2>
+                                    <div class="card-body">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-start" scope="col">Nome</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th></th>
+                                                    <th class="hide" scope="col">Data inizio</th>
+                                                    <th class="hide" scope="col">ROI</th>
+                                                    <th scope="col">Stato</th>
+                                                    <th scope="col">Azioni</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                    <td class="text-start" scope="row"><img src="img/class-avatar.jpg" alt="Avatar">Classe 75</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="hide">15 Feb 2021</td>
+                                                    <td class="hide">20%</td>
+                                                    <td><span class="badge text-bg-success">Done</span>
+                                                    </td>
+                                                    <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash"></i></td>
+                                              </tr>
+
+                                                <tr>
+                                                    <td class="text-start" scope="row"><img src="img/class-avatar.jpg" alt="Avatar">Classe 76</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="hide">16 Feb 2021</td>
+                                                    <td class="hide">20%</td>
+                                                    <td><span class="badge text-bg-success">Done</span>
+                                                    </td>
+                                                    <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash"></i></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-start" scope="row"><img src="img/class-avatar.jpg" alt="Avatar">Classe 77</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="hide">17 Feb 2021</td>
+                                                    <td class="hide">20%</td>
+                                                    <td><span class="badge txt-white bg-yellow">Warning</span>
+                                                    </td>
+                                                    <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash"></i></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-start" scope="row"><img src="img/class-avatar.jpg" alt="Avatar">Classe 78</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="hide">18 Feb 2021</td>
+                                                    <td class="hide">20%</td>
+                                                    <td><span class="badge text-bg-success">Done</span>
+                                                    </td>
+                                                    <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash"></i></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-start" scope="row"><img src="img/class-avatar.jpg" alt="Avatar">Classe 79</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="hide">19 Feb 2021</td>
+                                                    <td class="hide">20%</td>
+                                                    <td><span class="badge rounded-pill text-bg-danger">Danger</span>
+                                                    </td>
+                                                    <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash"></i></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-start" scope="row"><img src="img/class-avatar.jpg" alt="Avatar">Classe 80</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="hide">20 Feb 2021</td>
+                                                    <td class="hide">20%</td>
+                                                    <td><span class="badge text-bg-success">Done</span>
+                                                    </td>
+                                                    <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash"></i></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="text-start" scope="row"><img src="img/class-avatar.jpg" alt="Avatar">Classe 81</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="hide">21 Feb 2021</td>
+                                                    <td class="hide">20%</td>
+                                                    <td><span class="badge rounded-pill text-bg-danger">Danger</span>
+                                                    </td>
+                                                    <td><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash"></i></td>
+                                                </tr>
+                                            
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
                             </div>
+
+                            <!-- F.A.Q. -->
+                            <div class="col-12 my-3 min-h300">
+                                <div class="card">
+                                    <h2 class="card-header">F.A.Q.</h2>
+                                    <div class="card-body">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                        Come aggiungere un nuovo studente?
+                                                    </button>
+                                              </h2>
+                                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tenetur eum. Sequi doloremque est dignissimos, eveniet fugit voluptas atque, temporibus rerum placeat nobis maiores dolor voluptatum, dicta iure beatae consequatur!
+                                                    </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                        Come posso accedere alle informazioni del mio account?
+                                                    </button>
+                                              </h2>
+                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id libero a vel aliquid, rem minima similique aspernatur sequi voluptatibus ea porro incidunt voluptas, perspiciatis laboriosam officia provident laudantium pariatur excepturi.
+                                                    </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                        Posso usare questa dashboard da mobile?
+                                                    </button>
+                                              </h2>
+                                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id libero a vel aliquid, rem minima similique aspernatur sequi voluptatibus ea porro incidunt voluptas, perspiciatis laboriosam officia provident laudantium pariatur excepturi.
+                                                    </div>
+                                              </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="col-5">
-                            <div class="col-12 my-2 min-h300">
+                        
+                        <!-- COMPONETE 3 - 4 -->
+                        <div class="col-12 col-lg-5">
+
+                            <!-- TODO LIST -->
+                            <div class="col-12 my-3 min-h300">
+                                <div class="card">
+                                    <h2 class="card-header">Todo</h2>
+                                    <div class="card-body">
+                                        <ul class="list-group">
+
+                                            <li class="list-group-item">
+                                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                              <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                            </li>
+
+                                            <li class="list-group-item">
+                                              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                              <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe#112</label>
+                                            </li>
+
+                                            <li class="list-group-item">
+                                              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                              <label class="form-check-label" for="thirdCheckbox">Controllare Username Ghithub studenti</label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- STATS -->
+                            <div class="col-12 my-3 min-h300">
+
+                                <div class="card p-2">
+                                    <div class="card-body border border-1 rounded p-0">
+                                        <img src="img/stats.jpeg" class="card-img-top" alt="stats">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Utenti attivi</h5>
+                                        <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                Gennaio: 1200
+                                            </li>
+                                            <li class="list-group-item">
+                                                Febbraio: 800
+                                            </li>
+                                            <li class="list-group-item">
+                                                Marzo: 1800
+                                            </li>
+                                        </ul>
+                                        <div class="card-body">
+                                        <a href="#" class="card-link">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
-                            <div class="col-12 my-2 min-h300">
 
-                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

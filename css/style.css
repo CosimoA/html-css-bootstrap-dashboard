@@ -1,12 +1,12 @@
 *{
-    font-family: 'Roboto', sans-serif, FontAwesome;
+    font-family: 'Roboto', sans-serif ;
 }
 
 /* DEBUG */
 
-*{
+/* *{
     border: 1px solid rgb(0, 0, 0);
-}
+} */
 
 /* .min-h70{
     min-height: 70px;
@@ -14,13 +14,13 @@
 } */
 
 .min-h150{
-    min-height: 150px;
+    min-height: 100px;
 }
 
-.min-h300{
+/* .min-h300{
     min-height: 300px;
     background-color: pink;
-}
+} */
 
 /* .min-h500{
     min-height: 500px;
@@ -34,11 +34,32 @@
     GENERAL STYLES
 *************************************************/
 
+span{
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+}
+
 /* ICONS */
 i{
-    padding: 0 0.5rem;
     font-size: 1.5rem;
 }
+
+.nav-icon{
+    color: rgb(58, 58, 58);
+    padding: 0 0.8rem;
+    display: inline-block;
+}
+
+
+
+td i{
+    color: gray;
+    font-size: 1rem;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
 
 /* LINKS */
 
@@ -64,6 +85,10 @@ a{
     background-color: whitesmoke;
 }
 
+.bg-yellow{
+    background-color: rgb(255, 217, 0);
+}
+
 #banner{
     background-color: rgba(0, 0, 0, 0.250);
 }
@@ -87,7 +112,7 @@ a{
     color: black;
 }
 
-.txt-white{
+.txt-white, {
     color: white;
 }
 
@@ -144,7 +169,7 @@ input[type="search"]{
 /* MAIN */
 
 #general_container{
-    height: calc(100vh - 70px);
+    height: calc(100vh - 56px);
 }
 
 /* aside */
@@ -153,6 +178,18 @@ aside{
     width: 70px;
     background-image: url("../img/sidebar-bg.png");
     background-size: cover;
+    color: white;
+}
+
+aside nav{
+    height: 100%;
+}
+
+aside span{
+    display: none;
+}
+
+#menu-buttons{
     overflow-y: hidden;
 }
 
@@ -166,6 +203,20 @@ aside{
 .card{
     height: 100%;
     width: 100%;
+}
+
+td img{
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+tr{
+    text-align: center;
+}
+
+.hide{
+    display: none;
 }
 
 /************************************************
@@ -187,7 +238,20 @@ aside{
         width: 150px;
     }
 
+    aside span{
+        display: inline-block;
+    }
+
     #container_components{
         width: calc(100% - 150px);
     }
+}
+
+
+@media all and (min-width: 768px){
+
+    .hide{
+        display: table-cell;
+    }
+    
 }
