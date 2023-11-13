@@ -1,17 +1,17 @@
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif, FontAwesome;
 }
 
 /* DEBUG */
 
 *{
-    border: 1px solid yellow;
+    border: 1px solid rgb(0, 0, 0);
 }
 
-.min-h70{
+/* .min-h70{
     min-height: 70px;
     background-color: rgb(255, 255, 162);
-}
+} */
 
 .min-h150{
     min-height: 150px;
@@ -60,6 +60,10 @@ a{
     background-color: white;
 }
 
+.bg-whitesmoke{
+    background-color: whitesmoke;
+}
+
 #banner{
     background-color: rgba(0, 0, 0, 0.250);
 }
@@ -104,12 +108,38 @@ a{
 
 /*----------IMPUT----------*/
 
+input[type="search"]{
+    background-color: rgb(223, 220, 220);
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search{
+    background-color: rgb(223, 220, 220);
+    border-radius: 4px;
+}
+
+.search i{
+    font-size: 18px;
+    padding: 0 0.4rem;
+}
+
 
 /************************************************
     SITE SECTIONS
 ************************************************/
 
 /* HEADER */
+
+#logo-sm{
+    height: 40px;
+}
+
+#logo-lg{
+    display: none;
+}
 
 /* MAIN */
 
@@ -120,7 +150,7 @@ a{
 /* aside */
 
 aside{
-    width: 150px;
+    width: 70px;
     background-image: url("../img/sidebar-bg.png");
     background-size: cover;
     overflow-y: hidden;
@@ -129,7 +159,7 @@ aside{
 /* main */
 
 #container_components{
-    width: calc(100% - 150px);
+    width: calc(100% - 70px);
     overflow-y: auto;
 }
 
@@ -138,3 +168,26 @@ aside{
     width: 100%;
 }
 
+/************************************************
+    RESPONSIVE
+************************************************/
+
+/* Large devices 992px */
+@media all and (min-width: 992px){
+
+    #logo-sm{
+        display: none;
+    }
+    
+    #logo-lg{
+        display: inline-block;
+    }
+
+    aside{
+        width: 150px;
+    }
+
+    #container_components{
+        width: calc(100% - 150px);
+    }
+}

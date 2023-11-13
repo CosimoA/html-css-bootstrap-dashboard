@@ -21,8 +21,24 @@
     </head>
     <body>
         <!-- HEADER w Logo + Search Bar + 4 icon-buttons -->
-        <header class="min-h70">
+        <header class="d-flex align-items-center bg-whitesmoke py-2 min-h70">
+            <nav class="container-fluid">
+                <div class="row align-items-center bg-white">
+                    <div class="col-auto">
+                        <a href="#"><img id="logo-sm" src="img/mobile-logo.png" alt="Logo"></a>
+                        <a href="#"><img id="logo-lg" src="img/logo.svg" alt="Logo"></a>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center search">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="search" placeholder="Prova a cercare: Lezioni di Laravel" >
+                        </div>
+                    </div>
+                    <div class="col-auto">
 
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <!-- MAIN w Aside fixed menù + container-fluid for all the components -->
@@ -34,13 +50,13 @@
                 <div id="container_components" class="container-fluid flex-grow-1 min-h300">
                     <div class="row bg-light-blu">
 
-                        <div class="col-6 min-h150">
+                        <div class="col-12 col-lg-6 col-md-4 min-h150">
 
                         </div>
-                        <div class="col-4">
+                        <div class="col-12 col-lg-4 col-md-4 min-h150">
 
                         </div>
-                        <div class="col-2">
+                        <div class="col-12 col-lg-2 col-md-4 min-h150">
 
                         </div>
 
